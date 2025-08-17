@@ -1,0 +1,81 @@
+<!-- templates/about.html -->
+{% extends "base.html" %}
+{% block title %}About – Goshen Sublime Services{% endblock %}
+
+{% block content %}
+<div style="background: linear-gradient(135deg, #f0f4ff, #d9e2ff); padding: 3rem 1rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-2">About Goshen Sublime Services</h1>
+    <p class="fs-4 text-muted">Learn, Grow & Succeed with Our Expertise</p>
+  </div>
+</div>
+
+
+    <div class="row text-center mb-5">
+        <div class="col-md-4 mb-3">
+            <div class="info-card p-4 shadow-sm rounded">
+                <h5>Teaching Skills</h5>
+                <p>Practical tutorials and training to empower learners with essential skills.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="info-card p-4 shadow-sm rounded">
+                <h5>Digital Services</h5>
+                <p>Professional services like graphic design, document editing, project support, and more.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="info-card p-4 shadow-sm rounded">
+                <h5>Digital Products</h5>
+                <p>Templates, eBooks, and downloadable tools crafted for productivity and growth.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+            <div class="contact-box p-4 shadow-sm rounded">
+                <h4>Contact Information</h4>
+                <p><strong>Email:</strong> <a href="mailto:goshensublimeservies@gmail.com" target="_blank">goshensublimeservices@gmail.com</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348077311964" target="_blank">Chat on WhatsApp</a></p>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="contact-box p-4 shadow-sm rounded">
+                <h4>Follow Us on Social Media</h4>
+                <p>
+                    <a href="https://facebook.com/goshensublimeservices" target="_blank" class="me-2">Facebook</a> |
+                    <a href="https://instagram.com/goshen_ss" target="_blank" class="mx-2">Instagram</a> |
+                    <a href="https://twitter.com/goshen_ss" target="_blank" class="mx-2">Twitter</a> |
+                    <a href="https://tiktok.com/@goshen_ss" target="_blank" class="mx-2">TikTok</a> |
+                    <a href="https://youtube.com/@goshen_ss" target="_blank" class="ms-2">YouTube</a>
+                </p>
+                <p class="text-muted mt-2">Handle: <strong>@goshen_ss</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.info-card {
+    background: #ffffff;
+    border-left: 5px solid #0d6efd;
+}
+
+.contact-box {
+    background: #f8f9fa;
+    border-left: 5px solid #0d6efd;
+}
+
+a {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,217 @@
+<!-- templates/index.html -->
+{% extends 'base.html' %}
+{% block title %}Home – Goshen Sublime Services{% endblock %}
+
+{% block content %}
+
+<style>
+  /* Hero Section Styles */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #f0f4ff, #d9e2ff);
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .hero-left {
+    max-width: 60%;
+  }
+  .hero-left h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .hero-left .tagline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  .hero-left p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #444;
+  }
+  .hero-left .btn-cta {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  .hero-right img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  /* Writeup Box */
+  .writeup-box {
+    max-width: 720px;
+    background: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  /* Featured Products - left align text */
+  .product-card-custom .card-body {
+    text-align: left;
+  }
+
+</style>
+
+<!-- ---------------- Hero Section (New) ---------------- -->
+<div class="hero-section">
+  <div class="hero-left">
+    <h1>Goshen Sublime Services</h1>
+    <p class="tagline">Learn, Grow & Succeed</p>
+    <p>We provide you with exquisite and professional services to meet your needs in satisfaction.</p>
+    <a href="{{ url_for('store') }}" class="btn btn-primary btn-cta">Explore Our Store</a>
+  </div>
+  <div class="hero-right">
+    <!-- Placeholder logo image -->
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Goshen Sublime Services Logo">
+  </div>
+</div>
+
+<!-- ---------------- Our Services Section (New) ---------------- -->
+<div class="container my-5">
+  <h3 class="text-center mb-4">What we do !!!</h3>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-4">
+      <div class="service-card p-4 shadow-sm rounded text-center h-100">
+        <div class="service-icon mb-3">
+          <!-- Placeholder icon: you can replace with your own SVG or icon -->
+          <svg width="48" height="48" fill="#0d6efd" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2L1 21h22L12 2z"/>
+          </svg>
+        </div>
+        <h5 class="mb-3">Tutoring & Skill Acquisition Classes</h5>
+        <p class="text-muted">There are professional online classes to impact skills on individuals who want to grow and get themselves busy with productivity.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card p-4 shadow-sm rounded text-center h-100">
+        <div class="service-icon mb-3">
+          <svg width="48" height="48" fill="#198754" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+        </div>
+        <h5 class="mb-3">Web Development & Digital Services</h5>
+        <p class="text-muted">We will give your business what it needs by getting you a professional website to publicize your presence, grow your audience and meet more people/customers.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card p-4 shadow-sm rounded text-center h-100">
+        <div class="service-icon mb-3">
+          <svg width="48" height="48" fill="#0dcaf0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <rect width="20" height="14" x="2" y="5" rx="2"/>
+          </svg>
+        </div>
+        <h5 class="mb-3">Marketing & Advertisement</h5>
+        <p class="text-muted">We Buy, Trade and Sell Digital Assets including Currencies/Tokens, Books & Courses and other Digital Products. We also help you Advertise your business and products and ultimately help you reach more people and make more sales.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .service-card {
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+  .service-icon svg {
+    margin: 0 auto;
+  }
+</style>
+
+<!-- ---------------- Demarcation Bar ---------------- -->
+<div style="
+  height: 40px;
+  background: linear-gradient(135deg, #f0f4ff, #d9e2ff);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+"></div>
+
+
+<!-- ---------------- Writeup Box ---------------- -->
+<div class="container d-flex justify-content-center mb-5">
+  <div class="writeup-box text-center">
+    <h3 class="text-center" style="color: red;">Goshen $$</h3>
+    <p class="text-muted">
+      We specialize in providing top-notch professional services and products that empower you to learn, grow, and succeed. Our digital solutions are designed to meet the highest standards of quality and excellence.
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<!-- ---------------- Sponsorship Section ---------------- -->
+<div style="background: linear-gradient(135deg, #f0f4ff, #d9e2ff); padding: 3rem 1rem; border-radius: 0.5rem;">
+  <div class="container text-center">
+    <h2 class="mb-3">Sponsorship</h2>
+    <p class="mb-4 text-muted" style="max-width: 600px; margin: 0 auto;">
+      We appreciate your support in helping us grow and provide more value to our community. Your sponsorship makes a difference!
+    </p>
+    <a href="https://selar.com/showlove/goshenss" target="_blank" class="btn btn-outline-primary btn-lg">
+      Support Now
+    </a>
+  </div>
+</div>
+
+
+<!-- ---------------- Featured Products Section ---------------- -->
+<h4 class="text-center mt-5 mb-4">Featured Products 🎈</h4>
+<div class="row mt-3 g-4">
+    {% for product in featured %}
+    <div class="col-md-4">
+        <div class="product-card-custom mb-4 p-3 shadow-sm rounded">
+            <div class="accent-bar"></div>
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p class="fw-bold text-primary">Price: ₦{{ product.price }}</p>
+                <a href="{{ product.link }}" class="btn btn-primary btn-sm" target="_blank">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<!-- ---------------- Customer Reviews Section ---------------- -->
+<div class="container my-5">
+    <h5 class="text-center mb-4">Customer Reviews</h5>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="review-card h-100 p-4 shadow-sm rounded">
+                <p class="fst-italic">"Amazing service! The digital products helped me improve my skills significantly."</p>
+                <p class="fw-bold text-end mb-0">– Jane D.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="review-card h-100 p-4 shadow-sm rounded">
+                <p class="fst-italic">"Professional and timely delivery. Highly recommended!"</p>
+                <p class="fw-bold text-end mb-0">– John M.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="review-card h-100 p-4 shadow-sm rounded">
+                <p class="fst-italic">"Great experience with Goshen Sublime Services. Will definitely use their services again."</p>
+                <p class="fw-bold text-end mb-0">– Chinyere A.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------- CTA / Go to Store Button ---------------- -->
+<div class="text-center mb-5">
+    <a href="{{ url_for('store') }}" class="btn btn-primary btn-lg">Go to Store</a>
+</div>
+
+{% endblock %}

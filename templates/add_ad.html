@@ -1,0 +1,47 @@
+<!-- templates/add_ad.html -->
+{% extends "base.html" %}
+{% block title %}Add Ad – Goshen Sublime Services{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Add New Advertisement / Announcement</h2>
+    
+    <form action="{{ url_for('add_ad') }}" method="POST">
+        <!-- Ad Content -->
+        <div class="mb-3">
+            <label for="content" class="form-label">Ad Content</label>
+            <textarea class="form-control" id="content" name="content" rows="4" placeholder="Enter the announcement or offer here..." required></textarea>
+        </div>
+
+        <!-- Featured / Highlight Checkbox -->
+        <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="yes" id="featured" name="featured">
+            <label class="form-check-label" for="featured">
+                Mark as Featured Ad
+            </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Ad</button>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+</div>
+
+<style>
+.container {
+    max-width: 700px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+</style>
+{% endblock %}

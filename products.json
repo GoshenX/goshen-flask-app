@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Editable CV Template",
+    "desc": "A professional resume template in MS Word.",
+    "price": "₦2,000",
+    "image": "static/images/product1.jpg",
+    "link": "https://wa.me/2348031234567?text=I%20want%20to%20buy%20Editable%20CV"
+  },
+  {
+    "name": "Mini Importation Guide",
+    "desc": "Full guide to mini-importation in Nigeria.",
+    "price": "₦3,500",
+    "image": "static/images/product2.jpg",
+    "link": "https://wa.me/2348031234567?text=I%20want%20to%20buy%20Importation%20Guide"
+  },
+  {
+    "name": "Canva Design Course",
+    "desc": "Complete step-by-step video design course.",
+    "price": "₦5,000",
+    "image": "static/images/product3.jpg",
+    "link": "https://wa.me/2348031234567?text=I%20want%20to%20buy%20Canva%20Course"
+  }
+]

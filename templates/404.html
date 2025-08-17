@@ -1,0 +1,30 @@
+<!-- templates/404.html -->
+{% extends "base.html" %}
+{% block title %}Page Not Found – Goshen Sublime Services{% endblock %}
+
+{% block content %}
+<div class="container text-center my-5">
+    <h1 class="display-1 text-danger">404</h1>
+    <h2 class="mb-3">Oops! Page Not Found</h2>
+    <p class="mb-4">The page you are looking for does not exist or may have been moved.</p>
+    <a href="{{ url_for('home') }}" class="btn btn-primary btn-lg">Back to Home</a>
+</div>
+
+<style>
+h1.display-1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+</style>
+{% endblock %}
